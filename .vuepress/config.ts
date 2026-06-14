@@ -7,8 +7,8 @@ import {pwaPlugin} from "@vuepress/plugin-pwa";
 
 export default defineUserConfig({
   base: '/setlla/',
-  title: "Java",
-  description: "编码见闻录",
+  title: "匣中三尺水",
+  description: "剑术已成君把去，有蛟龙处斩蛟龙。",
   bundler: viteBundler(),
   // head: [
   //   ['link', { rel: 'icon', href: '/images/logo.png' }],
@@ -118,6 +118,36 @@ export default defineUserConfig({
               { text: "JavaIO", link: "/blogs/docs/Java/IO/base09" },
             ],
           },
+        ],
+      },
+      {
+        text: 'AI',
+        icon: 'Eye',
+        children: [
+          {
+            text: 'LangChain',
+            children: [
+              { text: '入门', link: '/blogs/docs/AI/LangChain/base01' },
+              // { text: "注释_关键字_字面量_变量_数据类型_标识符_输入输出_运算符", link: "/blogs/docs/Java/base/base02" },
+              // { text: "流程控制_数组_字符串", link: "/blogs/docs/Java/base/base03" },
+              // { text: "集合_包装类_方法_四种引用", link: "/blogs/docs/Java/base/base04" },
+              // { text: "面向对象", link: "/blogs/docs/Java/base/base05" },
+              // { text: "泛型|函数编程", link: "/blogs/docs/Java/base/base06" },
+              // { text: "异常|注解", link: "/blogs/docs/Java/base/base07" },
+            ],
+          },
+          // {
+          //   text: '集合体系',
+          //   children: [
+          //     { text: "集合体系结构", link: "/blogs/docs/Java/collections/base08" },
+          //   ],
+          // },
+          // {
+          //   text: '集合体系',
+          //   children: [
+          //     { text: "JavaIO", link: "/blogs/docs/Java/IO/base09" },
+          //   ],
+          // },
         ],
       },
       // { text: "Categories", link: "/blogs/Java/092101" },
