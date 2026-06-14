@@ -6,7 +6,7 @@ import { removePwaPlugin } from '@vuepress/plugin-remove-pwa'
 import {pwaPlugin} from "@vuepress/plugin-pwa";
 
 export default defineUserConfig({
-  base: '/java_blog/',
+  base: '/setlla/',
   title: "Java",
   description: "编码见闻录",
   bundler: viteBundler(),
@@ -28,7 +28,7 @@ export default defineUserConfig({
     logo: "/icon.svg",
     author: "gzc",
     authorAvatar: "/icon.svg",
-    docsRepo: "https://github.com/GZC-02/java_blog",
+    docsRepo: "https://github.com/gzcap/setlla",
     docsBranch: "main",
     docsDir: "./",
     lastUpdatedText: "上次更新时间",
@@ -190,7 +190,7 @@ export default defineUserConfig({
       type: 'giscus',
       // options 与 1.x 的 valineConfig 配置一致
       options: {
-        repo: 'GZC-02/java_blog',
+        repo: 'gzcap/setlla',
         repoId: 'R_kgDOM4br1Q',
         category: 'Announcements',
         categoryId: 'DIC_kwDOM4br1c4Ci4E_',
@@ -227,8 +227,8 @@ export default defineUserConfig({
         short_name: "JAVADocs",
         display: "standalone",
         background_color: "#fff",
-        start_url: "/java_blog/",
-        scope: "/java_blog/",
+        start_url: "/setlla/",
+        scope: "/setlla/",
         description: "Java 中文文档",
         icons: [{
           "src": "logo52.png",
