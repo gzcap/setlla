@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as a}from"./app-BmQIxwyA.js";const c={};function n(o,r){return a(),e("div")}const s=t(c,[["render",n],["__file","1.html.vue"]]),_=JSON.parse('{"path":"/tags/yichang/1.html","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{s as comp,_ as data};

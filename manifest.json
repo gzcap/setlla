@@ -3,8 +3,8 @@
   "short_name": "JAVADocs",
   "display": "standalone",
   "background_color": "#fff",
-  "start_url": "/java_blog/",
-  "scope": "/java_blog/",
+  "start_url": "/setlla/",
+  "scope": "/setlla/",
   "description": "Java 中文文档",
   "icons": [{
     "src": "logo52.png",
