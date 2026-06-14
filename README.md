@@ -8,7 +8,7 @@ modules:
   
 bannerBrand:
   bgImage: '/bg.svg'
-  title: Java 编程之路
+  title: Setlla 编程之路
   description: 编程见闻录。
   tagline: 博观而约取，厚积而薄发。
   buttons:
