@@ -1,40 +1,49 @@
-name: Deploy VuePress to GitHub Pages
+name: 部署文档
 
-# 根据你实际主分支修改：main / master 二选一
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
-  build-and-deploy:
+  deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
-      # 拉取代码
-      - name: Checkout Source
+      - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
 
-      # 配置 Node.js（按你项目实际版本调整，16/18/20 都可）
-      - name: Setup Node.js
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.x
+
+      - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: npm
+          node-version: 18.x
+          cache: 'pnpm'
 
-      # 安装依赖
-      - name: Install Dependencies
-        run: npm ci
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
 
-      # VuePress 打包（输出到 .vuepress/dist，和你日志一致）
-      - name: Build VuePress
-        run: npm run build
+      - name: 构建文档
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          pnpm run build
+          > .vuepress/dist/.nojekyll
 
-      # 部署到 gh-pages 分支 —— 关键：必须写 token 字段
-      - name: Deploy to GitHub Pages
+      - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
+          token: ${{ secrets.ACCESS_TOKEN }} # Settings > Secret 建立的 ACCESS_TOKEN
+          # 部署文档
           branch: gh-pages
           folder: .vuepress/dist
-          # 下面这行是救命配置，缺失必报错
-          token: ${{ secrets.GITHUB_TOKEN }}
-          delete: true
-          clean: true

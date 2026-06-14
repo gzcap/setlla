@@ -10,7 +10,7 @@ bannerBrand:
   bgImage: '/bg.svg'
   title: Setlla 编程之路
   description: 编程见闻录。
-  tagline: 博观而约取，厚积而薄发
+  tagline: 博观而约取，厚积而薄发。
   buttons:
     - { text: 导航, link: '/docs/guide/tools' }
     - { text: 知识体系, link: '/docs/guide/map', type: 'plain' }
