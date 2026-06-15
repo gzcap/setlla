@@ -8,9 +8,9 @@ modules:
   
 bannerBrand:
   bgImage: '/bg.svg'
-  title: Setlla 编程之路
-  description: 编程见闻录。
-  tagline: 剑术已成君把去，有蛟龙处斩蛟龙。
+  title: Setlla
+  description: 剑术已成君把去，有蛟龙处斩蛟龙。
+  tagline: AI
   buttons:
     - { text: 导航, link: '/docs/guide/tools' }
     - { text: 知识体系, link: '/docs/guide/map', type: 'plain' }
