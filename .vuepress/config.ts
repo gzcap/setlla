@@ -253,13 +253,13 @@ export default defineUserConfig({
       // 选项
       // showInstall: true,
       manifest: {
-        name: "Java中文文档",
+        name: "屠龙术",
         short_name: "JAVADocs",
         display: "standalone",
         background_color: "#fff",
         start_url: "/setlla/",
         scope: "/setlla/",
-        description: "Java 中文文档",
+        description: "中文文档",
         icons: [{
           "src": "logo52.png",
           "sizes": "52x52",
