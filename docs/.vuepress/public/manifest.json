@@ -1,0 +1,18 @@
+{
+  "name": "中文文档",
+  "short_name": "JAVADocs",
+  "display": "standalone",
+  "background_color": "#fff",
+  "start_url": "/setlla/",
+  "scope": "/setlla/",
+  "description": "屠龙术",
+  "icons": [{
+    "src": "logo52.png",
+    "sizes": "52x52",
+    "type": "image/png"
+  },{
+    "src": "logo288.png",
+    "sizes": "288x288",
+    "type": "image/png"
+  }]
+}
