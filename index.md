@@ -12,8 +12,8 @@ bannerBrand:
   description: 剑术已成君把去，有蛟龙处斩蛟龙。
   tagline: AI
   buttons:
-    - { text: 导航, link: '/docs/guide/tools' }
-    - { text: 知识体系, link: '/docs/guide/map', type: 'plain' }
+    - { text: 导航, link: '/blogs/docs/guide/tools' }
+    - { text: 知识体系, link: '/blogs/docs/guide/map', type: 'plain' }
   socialLinks: []
 #    - { icon: 'LogoGithub', link: 'https://github.com/vuepress-reco/vuepress-theme-reco' }
 blog:
