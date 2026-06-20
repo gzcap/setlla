@@ -14,7 +14,7 @@ bannerBrand:
   buttons:
     - { text: 导航, link: '/docs/guide/tools' }
     - { text: 知识体系, link: '/docs/guide/map', type: 'plain' }
-  socialLinks:
+  socialLinks: []
 #    - { icon: 'LogoGithub', link: 'https://github.com/vuepress-reco/vuepress-theme-reco' }
 blog:
   socialLinks:
